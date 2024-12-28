@@ -1,15 +1,28 @@
+"use client";
+
+import Image from "next/image"
+import logopicture from "../app/assets/logo.svg"
+import womanpicture from "../app/assets/woman.svg"
+import { Button } from "./_components/ui/button";
+
 export default function Home() {
     return (
         <main>
             {/* primeira seção */}
-            <section>
-                <nav>
-                    <img src="" alt="" />
+            <section className="bg-gray-200">
+                <nav className="flex flex-row justify-between items-center p-6">    
+                    <Image 
+                        src={logopicture}
+                        alt="Logo" 
+                    />
 
-                    <div>
+                    <div className="flex flex-row gap-8">
                         <button>Funcionamento</button>
                         <button>Preços</button>
-                        <button>Login</button>
+
+                        <Button variant={"outline"} className="font-bold">
+                            Login
+                        </Button>
                     </div>
                 </nav>
 
@@ -36,7 +49,10 @@ export default function Home() {
                 <h2>Como funciona?</h2>
 
                 <div>
-                    <img src="" alt="" />
+                    <Image 
+                        src={womanpicture} 
+                        alt="imagem de uma mulher carregando uma caixa" 
+                    />
 
                     <ul>
                         <li>
@@ -53,7 +69,7 @@ export default function Home() {
             </section>
 
             {/* terceira seção */}
-            <section>
+            <section className="bg-gray-200">
                 <h2>Preço Simples e Transparente</h2>
                 <p>
                     Pra que inúmeros planos quando nós sabemos exatamente o que é melhor para você? 
@@ -103,8 +119,10 @@ export default function Home() {
                     Comece sua assinatura agora mesmo. Cancele quando quiser. 
                 </p>
 
-                <img src="" alt="" />
-                <p>© 2024 LivroSaaS. Todos os direitos reservados.</p>
+                <footer>
+                    <img src="" alt="" />
+                    <p>© 2024 LivroSaaS. Todos os direitos reservados.</p>
+                </footer>
             </section>
         </main>
     );
