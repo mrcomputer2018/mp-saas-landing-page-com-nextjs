@@ -9,18 +9,18 @@ export default function Home() {
     return (
         <main>
             {/* primeira seção */}
-            <section className="bg-gray-200">
-                <nav className="flex flex-row justify-between items-center p-6">    
+            <section className="bg-gray-200 container mx-auto">
+                <nav className="flex flex-row justify-between items-center py-4 px-6">    
                     <Image 
                         src={logopicture}
                         alt="Logo" 
                     />
 
-                    <div className="flex flex-row gap-8">
-                        <button>Funcionamento</button>
-                        <button>Preços</button>
+                    <div className="flex flex-row gap-2">
+                        <Button variant={"link"}>Funcionamento</Button>
+                        <Button variant={"link"}>Preços</Button>
 
-                        <Button variant={"outline"} className="font-bold">
+                        <Button variant={"bg-white"} className="font-bold">
                             Login
                         </Button>
                     </div>
