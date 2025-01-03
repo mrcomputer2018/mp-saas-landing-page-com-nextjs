@@ -54,26 +54,30 @@ export default function Home() {
             </section>
 
             {/* segubda seção */}
-            <section>
-                <h2>Como funciona?</h2>
+            <section className="py-16">
+                <div className="container mx-auto">
+                    <h2 className="text-center text-[40px] font-bold">
+                        Como funciona?
+                    </h2>
 
-                <div>
-                    <Image 
-                        src={womanpicture} 
-                        alt="imagem de uma mulher carregando uma caixa" 
-                    />
+                    <div className="flex flex-row justify-between items-center gap-4 mx-72">
+                        <Image 
+                            src={womanpicture} 
+                            alt="imagem de uma mulher carregando uma caixa" 
+                        />
 
-                    <ul>
-                        <li>
-                            Acesso a 1 ebook por mês
-                        </li>
-                        <li>
-                            Curadoria especial
-                        </li>
-                        <li>
-                            Cancele quando quiser
-                        </li>
-                    </ul>
+                        <ul className="flex flex-col gap-4 text-muted-foreground">
+                            <li className="text-[24px]">
+                                Acesso a 1 ebook por mês
+                            </li>
+                            <li className="text-[24px]">
+                                Curadoria especial
+                            </li>
+                            <li className="text-[24px]">
+                                Cancele quando quiser
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
